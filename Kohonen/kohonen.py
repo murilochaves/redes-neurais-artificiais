@@ -8,5 +8,3 @@ class Neuronio:
 
     def getW(self):
         return self.w
-
-print('teste')
