@@ -1,3 +1,5 @@
+import matplotlib as mtl
+
 class Neuronio:
 
     def __init__(self, n):
