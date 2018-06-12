@@ -1,6 +1,6 @@
 # RNA
 
-
+![python](https://img.shields.io/badge/python-3.6.5-brightgreen.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## License
