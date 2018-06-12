@@ -1,3 +1,13 @@
+# teste
+.cfg
+activate
+activate.csh
+activate.fish
+easy_install
+easy_install-3.6
+pip
+pip3.6
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
