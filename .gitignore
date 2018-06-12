@@ -8,6 +8,8 @@ easy_install-3.6
 pip
 pip3
 pip3.6
+python
+python3
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
