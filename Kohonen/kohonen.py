@@ -9,4 +9,4 @@ class Neuronio:
     def getW(self):
         return self.w
 
-def erro proposital
+def erro proposital s
