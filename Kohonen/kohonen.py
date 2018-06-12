@@ -8,3 +8,7 @@ class Neuronio:
 
     def getW(self):
         return self.w
+
+def erro
+
+retrn 2 
