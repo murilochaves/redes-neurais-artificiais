@@ -1,5 +1,3 @@
-import matplotlib as mtl
-
 class Neuronio:
 
     def __init__(self, n):
@@ -11,4 +9,7 @@ class Neuronio:
     def getW(self):
         return self.w
 
-print('teste')
+def soma(a, b):
+    return a+b
+
+print(soma(2,5))
