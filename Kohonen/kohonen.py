@@ -8,8 +8,3 @@ class Neuronio:
 
     def getW(self):
         return self.w
-
-def soma(a, b):
-    return a+b
-
-print(soma(2,5))
