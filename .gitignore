@@ -11,6 +11,7 @@ pip3.6
 python
 python3
 pip-selfcheck.json
+f2py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
