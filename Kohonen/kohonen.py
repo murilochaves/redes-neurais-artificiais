@@ -1,3 +1,4 @@
+from random import random
 from math import sqrt
 
 class Neuronio:
@@ -131,8 +132,29 @@ def imprimeDicionario(dicionario):
     for item in dicionario:
         print('Neurônio', item, '\t', dicionario[item])
 
+def inicia_pesos(mapa):
+
+    '''
+    Essa função tem como objetivo a iniciar os pesos da rede randomicamente, não tem resultado ela só executará alterando
+
+    Ex: inicia_pesos(mapa)
+    '''
+
+    print('\n### Iniciando Pesos randomicamente ###')
+
+    for i in range(len(mapa)):
+        for j in range(len(mapa[0])):
+            for k in range(len(mapa[i][j].w)):
+                mapa[i][j].w[k] = random()
+            print('Neurônio:', mapa[i][j].nome, '\t', mapa[i][j])
+            print(mapa[i][j].w, '\n')
+
+#   #   #   #   #   #   #   #   #   #
+
 #1 - Obter o conjunto de amostras de treinamento
 dataset = montarDataset('Kohonen/dataset/amostra_treinamento.txt')
+
+#   #   #   #   #   #   #   #   #   #
 
 #2 - Definir o mapa topológico da rede
 qtdNeuronios = 16
@@ -146,12 +168,10 @@ mapa = criarMapa_Bidimensional(dimX, dimY, conexoes)
 
 dicionario_mapa = criarDicionario_Mapa(mapa)
 
-print(
-'''
-\n### Mapas auto-organizáveis de Kohonen ###
+print('''\n### Mapas auto-organizáveis de Kohonen ###
 
     ''', qtdNeuronios, ''' Neurônios
-    ''', conexoes, ''' Conexões de Xn
+    ''', conexoes, ''' Conexões de x (entradas)
     ''', dimX, 'x', dimY, ''' Matriz'''
 
     )
@@ -160,10 +180,14 @@ imprimeMatrizFantasiosa(mapa)
 
 imprimeDicionario(dicionario_mapa)
 
+#   #   #   #   #   #   #   #   #   #
+
 #3 - Iniciar o Vetor de pesos de cada neurônio
+inicia_pesos(mapa)
 
+#   #   #   #   #   #   #   #   #   #
 
-
+#4 - Montar o conjunto de Vizinhança
 
 # Inicializar pesos w_ij // para isso, temos que saber a 
 
