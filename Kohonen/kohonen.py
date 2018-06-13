@@ -121,6 +121,29 @@ def criarDicionario_Mapa(mapa):
 
     return dicionario_mapa
 
+def criarDicionario_vizinhos(conjunto_vizinhanca):
+
+    '''
+    Essa função tem como objetivo criar um dicionário para facilitar a visualização do conjunto de vizinhança dos neurônios
+    é passado o vetor montado do conjunto de vizinhança e é retornado o dicionário com as posições
+    '''
+
+    dicionario_vizinhos = {}
+
+    contador = 1
+
+    for i in range(len(conjunto_vizinhanca)):
+        # adicionar um novo valor funciona da forma: dicionario[chave] = valor do conteúdo
+        dicionario_vizinhos[contador] = conjunto_vizinhanca[i]
+        contador += 1
+
+    print('\n### Imprimindo o conjunto de vizinhança dos neurônios ###')
+
+    for item in dicionario_vizinhos:
+        print('Neurônio:', item, '\n', dicionario_vizinhos[item], '\n')
+
+    return dicionario_vizinhos
+
 def imprimeDicionario(dicionario):
 
     '''
@@ -148,6 +171,81 @@ def inicia_pesos(mapa):
                 mapa[i][j].w[k] = random()
             print('Neurônio:', mapa[i][j].nome, '\t', mapa[i][j])
             print(mapa[i][j].w, '\n')
+
+def retornaVizinhos_bi_qrd_fausett(linha, coluna, matriz, R):
+
+    '''
+    Essa função tem como objetivo retornar os vizinhos específicos de um nó utilizando a topologia bidimensional quadrada
+    e vizinhança proposta por fausett
+    É passada a localização exata do nó em uma matriz (linha, coluna), passada também a matriz específica junto com R que seria o Raio
+    como resposta, é retornado um vetor com os nós respectivos.
+    '''
+
+    vizinhos = []
+    
+    if R < 0:
+        R = 0
+
+    while R >= len(matriz) or R >= len(matriz[0]):
+        R = R - 1
+
+    #linha = linha
+    #coluna = coluna
+    
+    #print('\nLinha: ', linha)
+    #print('Coluna: ', coluna)
+
+    linhaInicial = linha - R
+    linhaFinal = linha + R
+    
+    if linhaInicial < 0:
+        linhaInicial = 0
+    while linhaFinal > len(matriz)-1:
+        linhaFinal = linhaFinal - 1
+
+    #print('\nLinhaInicial: ', linhaInicial)
+    #print('LinhaFinal: ', linhaFinal)
+
+    colunaInicial = coluna - R
+    colunaFinal = coluna + R
+    
+    if colunaInicial < 0:
+        colunaInicial = 0
+    while colunaFinal > len(matriz[0])-1:
+        colunaFinal = colunaFinal - 1
+
+    #print('\nColunaInicial: ', colunaInicial)
+    #print('colunaFinal: ', colunaFinal, '\n')
+    
+    for i in range(linhaInicial, linhaFinal+1):
+        for j in range(colunaInicial, colunaFinal+1):
+            if R == 0:
+                vizinhos.append(matriz[i][j])
+            if R != 0 and matriz[i][j] != matriz[linha][coluna]:
+                vizinhos.append(matriz[i][j])
+            #vizinhos.append(matriz[i][j])
+
+    return vizinhos
+
+def getVizinhos(matriz, R):
+
+    '''
+    Essa funçnao tem como objetivo percorrer uma matriz de neurônios e montar um vetor com o conjunto de vizinhaça
+    É passada como argumento uma matriz dos neurônios juntamente com o raio e como resposta é retornado um vetor com
+    a matriz de vizinhança.
+
+    Ex: vizinhança = getVizinhos(matriz, R)
+    '''
+    
+    vizinhanca = []
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[0])):
+            aux = retornaVizinhos_bi_qrd_fausett(i, j, matriz, R)
+            #aux.append(vizinhos(i, j, matriz, R))
+            vizinhanca.append(aux)
+                
+    return vizinhanca
 
 #   #   #   #   #   #   #   #   #   #
 
@@ -188,14 +286,10 @@ inicia_pesos(mapa)
 #   #   #   #   #   #   #   #   #   #
 
 #4 - Montar o conjunto de Vizinhança
+R = 1
 
-# Inicializar pesos w_ij // para isso, temos que saber a 
+conjunto_vizinhanca = getVizinhos(mapa, R)
 
-
-# dataset possui 3 grandezas então teremos 3 conexões para cada neurônio {x1, x2, x3}
-
-# contituir a rede com 16 neurônios (4x4)
+dicionario_vizinhanca = criarDicionario_vizinhos(conjunto_vizinhanca)
 
 # treinar com taxa de aprendizado de 0,001
-
-# vizinhança unitário R = 1
