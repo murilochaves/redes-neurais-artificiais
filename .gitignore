@@ -13,6 +13,9 @@ python3
 pip-selfcheck.json
 f2py
 
+# tirando a mesa de teste
+testes.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
