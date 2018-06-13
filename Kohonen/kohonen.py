@@ -9,21 +9,21 @@ class Neuronio:
     Também podemos setar fora do construtor e retornar os pesos
     '''
 
-    def __init__(self, n, id):
+    def __init__(self, n, nome):
         self.w = [0.0] * n
-        self.id = id
+        self.nome = nome
 
     def setW(self, w):
         self.w = w
 
-    def setId(self, id):
-        self.id = id
+    def setNome(self, nome):
+        self.nome = nome
 
     def getW(self):
         return self.w
 
-    def getId(self):
-        return self.id
+    def getNome(self):
+        return self.nome
 
 def imprimeMatriz(matriz):
 
