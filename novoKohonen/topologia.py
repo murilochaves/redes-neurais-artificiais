@@ -56,6 +56,10 @@ class Mapa:
 
     def imprimeInfoMapa(self):
 
+        '''
+        Essa função tem como objetivo apenas de imprimir as informações sobre o mapa criado
+        '''
+        
         print('\n### Topologia %s definida ###' % self.topologia)
         print('\n\t Qtd. Neurônios:', self.qtdNeuronios)
 
