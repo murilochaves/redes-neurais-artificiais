@@ -10,7 +10,7 @@ class Neuronio:
     Também podemos setar fora do construtor e retornar os pesos
     '''
 
-    def __init__(self, n, nome):
+    def __init__(self, n, nome = None):
         self.w = [0.0] * n
         self.nome = nome
 
