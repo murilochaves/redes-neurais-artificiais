@@ -17,6 +17,27 @@ class Mapa:
         self.neuronios = []
         self.topologia = None
 
+    def setQtdNeuronios(self, qtdNeuronios):
+        self.qtdNeuronios = qtdNeuronios
+
+    def setQtdConexoes(self, qtdConexoes):
+        self.qtdConexoes = qtdConexoes
+
+    def setTopologia(self, topologia=None):
+        self.topologia = topologia
+
+    def getQtdNeuronios(self):
+        return self.qtdNeuronios
+
+    def getQtdConexoes(self):
+        return self.qtdConexoes
+
+    def getTopologia(self):
+        return self.topologia
+
+    def getNeuronios(self):
+        return self.neuronios
+
     def setUnidimensional(self):
 
         '''
@@ -60,16 +81,16 @@ class Mapa:
         Essa função tem como objetivo apenas de imprimir as informações sobre o mapa criado
         '''
         
-        print('\n### Topologia %s definida ###' % self.topologia)
-        print('\n\t Qtd. Neurônios:', self.qtdNeuronios)
+        print('\n### Topologia %s definida ###' % self.getTopologia())
+        print('\n\t Qtd. Neurônios:', self.getQtdNeuronios())
 
         if self.topologia == 'Unidimensional':
-            print('\t Tam. Vetor:', len(self.neuronios))
-            print('\n', self.neuronios)
+            print('\t Tam. Vetor:', len(self.getQtdNeuronios()))
+            print('\n', self.getNeuronios())
             
         elif self.topologia == 'Bidimensional':
             print('\t Tam Matriz:', len(self.neuronios), 'x', len(self.neuronios[0]))
-            print('\n', self.neuronios)
+            print('\n', self.getNeuronios())
 
         else:
             print('ERRO: O mapa não tem uma topologia definida no momento')
@@ -78,7 +99,7 @@ class Mapa:
 ##################
 ##### TESTES #####
 ##################
-
+'''
 qtdNeuronios = 16
 qtdConexoes = 3
 
@@ -86,3 +107,4 @@ mapa = Mapa(qtdNeuronios, qtdConexoes)
 
 #mapa.setUnidimensional()
 mapa.setBidimensional()
+'''
