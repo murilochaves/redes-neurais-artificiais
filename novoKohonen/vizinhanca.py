@@ -1,13 +1,19 @@
-from neuronio import *
-from topologia import *
+def getVizinhos(matriz, R):
 
-class Vizinhanca:
+    '''
+    Essa funçnao tem como objetivo percorrer uma matriz de neurônios e montar um vetor com o conjunto de vizinhaça
+    É passada como argumento uma matriz dos neurônios juntamente com o raio e como resposta é retornado um vetor com
+    a matriz de vizinhança.
 
-    def __init__(self, R):
-        self.r = R
+    Ex: vizinhança = getVizinhos(matriz, R)
+    '''
+    
+    vizinhanca = []
 
-    def setR(self, R):
-        self.r = R
-
-    def getR(self):
-        return self.r
+    for i in range(len(matriz)):
+        for j in range(len(matriz[0])):
+            aux = retornaVizinhos_bi_qrd_fausett(i, j, matriz, R)
+            #aux.append(vizinhos(i, j, matriz, R))
+            vizinhanca.append(aux)
+                
+    return vizinhanca

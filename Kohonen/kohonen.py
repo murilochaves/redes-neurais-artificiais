@@ -250,7 +250,9 @@ def getVizinhos(matriz, R):
 #   #   #   #   #   #   #   #   #   #
 
 #1 - Obter o conjunto de amostras de treinamento
-dataset = montarDataset('Kohonen/dataset/amostra_treinamento.txt')
+dataset = montarDataset('dataset/amostra_treinamento.txt')
+
+print(dataset)
 
 #   #   #   #   #   #   #   #   #   #
 

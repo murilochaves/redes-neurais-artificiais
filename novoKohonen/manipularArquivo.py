@@ -17,4 +17,21 @@ def montarDataset(arquivo):
 
         dataset.append(valores)
 
+    print(
+    '''\n### Dataset constituído ###
+        
+    Qtd. de amostras: ''', len(dataset), '''
+    Qtd. de grandezas: ''', len(dataset[0]), '''
+    '''
+    )
+    print(dataset)
+
     return dataset
+
+##################
+##### TESTES #####
+##################
+
+#dataset = montarDataset('dir/arquivo.txt')
+
+#print(dataset)
