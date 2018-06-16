@@ -56,7 +56,11 @@ $ python3 main.py
 	 3  Conexões de entrada
 	 Tam Matriz: 4 x 4
 
- [[<neuronio.Neuronio object at 0x101f19898>, <neuronio.Neuronio object at 0x101f19828>, <neuronio.Neuronio object at 0x101f197f0>, <neuronio.Neuronio object at 0x101f644e0>], [<neuronio.Neuronio object at 0x101f64518>, <neuronio.Neuronio object at 0x101f64550>, <neuronio.Neuronio object at 0x101f64588>, <neuronio.Neuronio object at 0x101f645c0>], [<neuronio.Neuronio object at 0x101f645f8>, <neuronio.Neuronio object at 0x101f64630>, <neuronio.Neuronio object at 0x101f64668>, <neuronio.Neuronio object at 0x101f646a0>], [<neuronio.Neuronio object at 0x101f646d8>, <neuronio.Neuronio object at 0x101f64710>, <neuronio.Neuronio object at 0x101f64748>, <neuronio.Neuronio object at 0x101f64780>]]
+ [
+     [<neuronio.Neuronio object at 0x101f19898>, <neuronio.Neuronio object at 0x101f19828>, <neuronio.Neuronio object at 0x101f197f0>, <neuronio.Neuronio object at 0x101f644e0>], 
+     [<neuronio.Neuronio object at 0x101f64518>, <neuronio.Neuronio object at 0x101f64550>, <neuronio.Neuronio object at 0x101f64588>, <neuronio.Neuronio object at 0x101f645c0>], 
+     [<neuronio.Neuronio object at 0x101f645f8>, <neuronio.Neuronio object at 0x101f64630>, <neuronio.Neuronio object at 0x101f64668>, <neuronio.Neuronio object at 0x101f646a0>], 
+     [<neuronio.Neuronio object at 0x101f646d8>, <neuronio.Neuronio object at 0x101f64710>, <neuronio.Neuronio object at 0x101f64748>, <neuronio.Neuronio object at 0x101f64780>]]
 
 ### Imprimindo topologia da Rede ###
 [1, 2, 3, 4]
@@ -134,50 +138,150 @@ Neurônio: 16 	 <neuronio.Neuronio object at 0x101f64780>
 
 ### Imprimindo o conjunto de vizinhança dos neurônios ###
 Neurônio: 1 
- [<neuronio.Neuronio object at 0x101f19828>, <neuronio.Neuronio object at 0x101f64518>, <neuronio.Neuronio object at 0x101f64550>] 
+ [
+     <neuronio.Neuronio object at 0x101f19828>, 
+     <neuronio.Neuronio object at 0x101f64518>, 
+     <neuronio.Neuronio object at 0x101f64550>
+ ] 
 
 Neurônio: 2 
- [<neuronio.Neuronio object at 0x101f19898>, <neuronio.Neuronio object at 0x101f197f0>, <neuronio.Neuronio object at 0x101f64518>, <neuronio.Neuronio object at 0x101f64550>, <neuronio.Neuronio object at 0x101f64588>] 
+ [
+     <neuronio.Neuronio object at 0x101f19898>, 
+     <neuronio.Neuronio object at 0x101f197f0>, 
+     <neuronio.Neuronio object at 0x101f64518>, 
+     <neuronio.Neuronio object at 0x101f64550>, 
+     <neuronio.Neuronio object at 0x101f64588>
+ ] 
 
 Neurônio: 3 
- [<neuronio.Neuronio object at 0x101f19828>, <neuronio.Neuronio object at 0x101f644e0>, <neuronio.Neuronio object at 0x101f64550>, <neuronio.Neuronio object at 0x101f64588>, <neuronio.Neuronio object at 0x101f645c0>] 
+ [
+     <neuronio.Neuronio object at 0x101f19828>, 
+     <neuronio.Neuronio object at 0x101f644e0>,
+     <neuronio.Neuronio object at 0x101f64550>, 
+     <neuronio.Neuronio object at 0x101f64588>, 
+     <neuronio.Neuronio object at 0x101f645c0>
+ ] 
 
 Neurônio: 4 
- [<neuronio.Neuronio object at 0x101f197f0>, <neuronio.Neuronio object at 0x101f64588>, <neuronio.Neuronio object at 0x101f645c0>] 
+ [
+     <neuronio.Neuronio object at 0x101f197f0>, 
+     <neuronio.Neuronio object at 0x101f64588>, 
+     <neuronio.Neuronio object at 0x101f645c0>
+ ] 
 
 Neurônio: 5 
- [<neuronio.Neuronio object at 0x101f19898>, <neuronio.Neuronio object at 0x101f19828>, <neuronio.Neuronio object at 0x101f64550>, <neuronio.Neuronio object at 0x101f645f8>, <neuronio.Neuronio object at 0x101f64630>] 
+ [
+     <neuronio.Neuronio object at 0x101f19898>, 
+     <neuronio.Neuronio object at 0x101f19828>, 
+     <neuronio.Neuronio object at 0x101f64550>, 
+     <neuronio.Neuronio object at 0x101f645f8>, 
+     <neuronio.Neuronio object at 0x101f64630>
+ ] 
 
 Neurônio: 6 
- [<neuronio.Neuronio object at 0x101f19898>, <neuronio.Neuronio object at 0x101f19828>, <neuronio.Neuronio object at 0x101f197f0>, <neuronio.Neuronio object at 0x101f64518>, <neuronio.Neuronio object at 0x101f64588>, <neuronio.Neuronio object at 0x101f645f8>, <neuronio.Neuronio object at 0x101f64630>, <neuronio.Neuronio object at 0x101f64668>] 
+ [
+     <neuronio.Neuronio object at 0x101f19898>, 
+     <neuronio.Neuronio object at 0x101f19828>, 
+     <neuronio.Neuronio object at 0x101f197f0>, 
+     <neuronio.Neuronio object at 0x101f64518>, 
+     <neuronio.Neuronio object at 0x101f64588>, 
+     <neuronio.Neuronio object at 0x101f645f8>, 
+     <neuronio.Neuronio object at 0x101f64630>, 
+     <neuronio.Neuronio object at 0x101f64668>
+ ] 
 
 Neurônio: 7 
- [<neuronio.Neuronio object at 0x101f19828>, <neuronio.Neuronio object at 0x101f197f0>, <neuronio.Neuronio object at 0x101f644e0>, <neuronio.Neuronio object at 0x101f64550>, <neuronio.Neuronio object at 0x101f645c0>, <neuronio.Neuronio object at 0x101f64630>, <neuronio.Neuronio object at 0x101f64668>, <neuronio.Neuronio object at 0x101f646a0>] 
+ [
+     <neuronio.Neuronio object at 0x101f19828>, 
+     <neuronio.Neuronio object at 0x101f197f0>, 
+     <neuronio.Neuronio object at 0x101f644e0>, 
+     <neuronio.Neuronio object at 0x101f64550>, 
+     <neuronio.Neuronio object at 0x101f645c0>, 
+     <neuronio.Neuronio object at 0x101f64630>, 
+     <neuronio.Neuronio object at 0x101f64668>, 
+     <neuronio.Neuronio object at 0x101f646a0>
+ ] 
 
 Neurônio: 8 
- [<neuronio.Neuronio object at 0x101f197f0>, <neuronio.Neuronio object at 0x101f644e0>, <neuronio.Neuronio object at 0x101f64588>, <neuronio.Neuronio object at 0x101f64668>, <neuronio.Neuronio object at 0x101f646a0>] 
+ [
+     <neuronio.Neuronio object at 0x101f197f0>, 
+     <neuronio.Neuronio object at 0x101f644e0>, 
+     <neuronio.Neuronio object at 0x101f64588>, 
+     <neuronio.Neuronio object at 0x101f64668>, 
+     <neuronio.Neuronio object at 0x101f646a0>
+ ] 
 
 Neurônio: 9 
- [<neuronio.Neuronio object at 0x101f64518>, <neuronio.Neuronio object at 0x101f64550>, <neuronio.Neuronio object at 0x101f64630>, <neuronio.Neuronio object at 0x101f646d8>, <neuronio.Neuronio object at 0x101f64710>] 
+ [
+     <neuronio.Neuronio object at 0x101f64518>, 
+     <neuronio.Neuronio object at 0x101f64550>, 
+     <neuronio.Neuronio object at 0x101f64630>, 
+     <neuronio.Neuronio object at 0x101f646d8>, 
+     <neuronio.Neuronio object at 0x101f64710>
+ ] 
 
 Neurônio: 10 
- [<neuronio.Neuronio object at 0x101f64518>, <neuronio.Neuronio object at 0x101f64550>, <neuronio.Neuronio object at 0x101f64588>, <neuronio.Neuronio object at 0x101f645f8>, <neuronio.Neuronio object at 0x101f64668>, <neuronio.Neuronio object at 0x101f646d8>, <neuronio.Neuronio object at 0x101f64710>, <neuronio.Neuronio object at 0x101f64748>] 
+ [
+     <neuronio.Neuronio object at 0x101f64518>, 
+     <neuronio.Neuronio object at 0x101f64550>, 
+     <neuronio.Neuronio object at 0x101f64588>, 
+     <neuronio.Neuronio object at 0x101f645f8>, 
+     <neuronio.Neuronio object at 0x101f64668>, 
+     <neuronio.Neuronio object at 0x101f646d8>, 
+     <neuronio.Neuronio object at 0x101f64710>, 
+     <neuronio.Neuronio object at 0x101f64748>
+ ] 
 
 Neurônio: 11 
- [<neuronio.Neuronio object at 0x101f64550>, <neuronio.Neuronio object at 0x101f64588>, <neuronio.Neuronio object at 0x101f645c0>, <neuronio.Neuronio object at 0x101f64630>, <neuronio.Neuronio object at 0x101f646a0>, <neuronio.Neuronio object at 0x101f64710>, <neuronio.Neuronio object at 0x101f64748>, <neuronio.Neuronio object at 0x101f64780>] 
+ [
+     <neuronio.Neuronio object at 0x101f64550>, 
+     <neuronio.Neuronio object at 0x101f64588>, 
+     <neuronio.Neuronio object at 0x101f645c0>, 
+     <neuronio.Neuronio object at 0x101f64630>, 
+     <neuronio.Neuronio object at 0x101f646a0>, 
+     <neuronio.Neuronio object at 0x101f64710>, 
+     <neuronio.Neuronio object at 0x101f64748>, 
+     <neuronio.Neuronio object at 0x101f64780>
+ ] 
 
 Neurônio: 12 
- [<neuronio.Neuronio object at 0x101f64588>, <neuronio.Neuronio object at 0x101f645c0>, <neuronio.Neuronio object at 0x101f64668>, <neuronio.Neuronio object at 0x101f64748>, <neuronio.Neuronio object at 0x101f64780>] 
+ [
+     <neuronio.Neuronio object at 0x101f64588>, 
+     <neuronio.Neuronio object at 0x101f645c0>, 
+     <neuronio.Neuronio object at 0x101f64668>, 
+     <neuronio.Neuronio object at 0x101f64748>, 
+     <neuronio.Neuronio object at 0x101f64780>
+ ] 
 
 Neurônio: 13 
- [<neuronio.Neuronio object at 0x101f645f8>, <neuronio.Neuronio object at 0x101f64630>, <neuronio.Neuronio object at 0x101f64710>] 
+ [
+     <neuronio.Neuronio object at 0x101f645f8>, 
+     <neuronio.Neuronio object at 0x101f64630>, 
+     <neuronio.Neuronio object at 0x101f64710>
+] 
 
 Neurônio: 14 
- [<neuronio.Neuronio object at 0x101f645f8>, <neuronio.Neuronio object at 0x101f64630>, <neuronio.Neuronio object at 0x101f64668>, <neuronio.Neuronio object at 0x101f646d8>, <neuronio.Neuronio object at 0x101f64748>] 
+ [
+     <neuronio.Neuronio object at 0x101f645f8>, 
+     <neuronio.Neuronio object at 0x101f64630>, 
+     <neuronio.Neuronio object at 0x101f64668>, 
+     <neuronio.Neuronio object at 0x101f646d8>, 
+     <neuronio.Neuronio object at 0x101f64748>
+ ] 
 
 Neurônio: 15 
- [<neuronio.Neuronio object at 0x101f64630>, <neuronio.Neuronio object at 0x101f64668>, <neuronio.Neuronio object at 0x101f646a0>, <neuronio.Neuronio object at 0x101f64710>, <neuronio.Neuronio object at 0x101f64780>] 
+ [
+     <neuronio.Neuronio object at 0x101f64630>, 
+     <neuronio.Neuronio object at 0x101f64668>, 
+     <neuronio.Neuronio object at 0x101f646a0>, 
+     <neuronio.Neuronio object at 0x101f64710>, 
+     <neuronio.Neuronio object at 0x101f64780>
+ ] 
 
 Neurônio: 16 
- [<neuronio.Neuronio object at 0x101f64668>, <neuronio.Neuronio object at 0x101f646a0>, <neuronio.Neuronio object at 0x101f64748>] 
- ```
+ [
+     <neuronio.Neuronio object at 0x101f64668>, 
+     <neuronio.Neuronio object at 0x101f646a0>, 
+     <neuronio.Neuronio object at 0x101f64748>
+ ] 
+```
