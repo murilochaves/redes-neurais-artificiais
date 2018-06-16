@@ -3,6 +3,11 @@ from topologia import *
 
 def kohonen():
 
+    '''
+    Essa função tem objetivo executar o algoritmo do Kohonen passo a passo chamando todas as outras funções em arquivos
+    distintos, facilitando assima a manutenabilidade.
+    '''
+
     #1 - Obter o conjunto de amostras de treinamento
     dataset = montarDataset('dataset/amostras_treinamento.txt')
 
@@ -28,4 +33,4 @@ def kohonen():
 
     dicionario_vizinhanca = criarDicionario_vizinhos(conjunto_vizinhanca)
 
-kohonen()
+#kohonen()
