@@ -135,7 +135,7 @@
   <br>
   
   <p>
-    <b>3</b>. <code><i>Após o treinamento</i></code> do <i>Perceptron</i>, coloque este em operação, <code><i>aplicando-o na classificação automática das amostras</i></code> de óleo da <code><i>tabela 3.3</i></code>, indicando ainda nesta tabela aqueles <code><i>resultados das saídas</i></code> (Classes) <code><i>referentes aos cinco processos de treinamento realizados</i></code> no <code><i>item 1</i></code>.
+    <b>3</b>. <code><i>Após o treinamento</i></code> do <i>Perceptron</i>, coloque este em operação, aplicando-o na classificação automática das <a href="https://github.com/MuriloChaves/redes-neurais-artificiais/blob/master/01_perceptron/dados/Amostra%23Tabela3.3_RNA.txt">amostras de óleo</a> da <code><i>tabela 3.3</i></code>, indicando ainda nesta tabela aqueles <code><i>resultados das saídas</i></code> (Classes) <code><i>referentes aos cinco processos de treinamento realizados</i></code> no <code><i>item 1</i></code>.
   </p>
   
   <br>
