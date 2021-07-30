@@ -1,104 +1,292 @@
-## 3.6 - Projeto Prático
+## 3.6 - Projeto Prático (Perceptron Simples)
 
 <div align='justify'>
+
   <p>
     Pela análise de um processo de destilação fracionada de petróleo observou-se que determinado óleo poderia ser classificado em duas classes de pureza <code>{<i>P<sub>1</sub> e P<sub>2</sub></i>}</code> a partir da medição de três grandezas <code>{<i>x<sub>1</sub>, x<sub>2</sub> e x<sub>3</sub></i>}</code>, que representam algumas de suas propriedades físico-químicas. A equipe de engenheiros e cientistas pretende usar uma rede <i>Perceptron</i> para executar a classificação automática das duas classes.
   <p>
   
   <p>
-    Assim, baseado nas informações coletadas do processo, formou-se o conjunto de treinamento apresentado no <LINK DO CONJUNTO DE TREINAMENTO>, tomando por convenção o valor `-1` para óleo pertencente à classe `P1` e o valor `1` para óleo pertencente à classe `P2`.
+    Assim, baseado nas informações coletadas do processo, formou-se o conjunto de treinamento apresentado no <a href="https://github.com/MuriloChaves/redes-neurais-artificiais/blob/master/perceptron/dados/Tabela%23Seção3.6_RNA.txt">apêndice I<a>, tomando por convenção o valor <code><i>-1</i></code> para óleo pertencente à classe <code><i>P<sub>1</sub></i></code> e o valor <code><i>1</i></code> para óleo pertencente à classe <code><i>P<sub>2</sub></i></code>.
+  <p>
 
-Para tanto, o <b>neurônio</b> constituinte do <i>Perceptron</i> terá então <b>três entradas</b> e <b>uma saída</b> conforme ilustrado na imagem:
+  <p>
+    Para tanto, o <code><i>neurônio</i></code> constituinte do <i>Perceptron</i> terá então <code><i>três entradas</i></code> e <code><i>uma saída</i></code> conforme ilustrado na <code><i>figura 3.8</i></code>:
+  </p>
+    
+  <br>
 
-<FOTO>
+  <div align='center'>
+    <img src="https://github.com/MuriloChaves/redes-neurais-artificiais/blob/master/perceptron/imagens/estrutura_perceptron.png?raw=true" width="50%">
+    <p>
+      <i>Figura 3.8 - Arquitetura do Perceptron para o projeto prático.</i>
+    </p>
+  </div>
+    
+  <br>
+  
+  <p>
+    Utilizando o <code><i>algoritmo supervisionado de Hebb</i></code> (<code><i>regra de Hebb</i></code>) para <code><i>classificação de padrões</i></code>, e assumindo-se a <code><i>taxa de aprendizagem</i></code> como <code><i>0,01</i></code>, faça as seguintes atividades:
+  </p>
 
-Legenda: Arquitetura do <i>Perceptron</i> para o projeto prático.
+  <p>
+    <b>1</b>. <code><i>Execute cinco treinamentos</i></code> para a rede <i>Perceptron</i>, <code><i>iniciando o vetor de pesos {<b>w</b>} em cada treinamento com valores aleatórios entre zero e um</i></code>. Se for o caso, reinicie o gerador de números aleatórios em cada treinamento de tal forma que os elementos do vetor de pesos iniciais não sejam os mesmos. O conjunto de treinamento encontra-se no <a href="https://github.com/MuriloChaves/redes-neurais-artificiais/blob/master/perceptron/dados/Tabela%23Seção3.6_RNA.txt">apêndice I<a>.
+  </p>
+  
+  <p>
+    <b>2</b>. Registre os resultados dos cinco treinamentos na <code><i>tabela 3.2</i></code> apresentada a seguir:
+  </p>
+    
+  <br>
+    
+  <div align='center'>
+    <p>
+      <i>Tabela 3.2 - Resultados dos treinamentos do Perceptron.</i>
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Treinamento</th>
+          <th colspan="4">Vetor de pesos iniciais</th>
+          <th colspan="4">Vetor de pesos finais</th>
+          <th>Número de épocas</th>
+        </tr>
+        <tr>
+          <td><code><i>w<sub>0</sub><i></code></td>
+          <td><code><i>w<sub>1</sub><i></code></td>
+          <td><code><i>w<sub>2</sub><i></code></td>
+          <td><code><i>w<sub>3</sub><i></code></td>
+          <td><code><i>w<sub>0</sub><i></code></td>
+          <td><code><i>w<sub>1</sub><i></code></td>
+          <td><code><i>w<sub>2</sub><i></code></td>
+          <td><code><i>w<sub>3</sub><i></code></td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr align='center'>
+          <td>1º (<code><i>T1</i></code>)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <tr align='center'>
+          <td>2º (<code><i>T2</i></code>)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <tr align='center'>
+          <td>3º (<code><i>T3</i></code>)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <tr align='center'>
+          <td>4º (<code><i>T4</i></code>)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <tr align='center'>
+          <td>5º (<code><i>T5</i></code>)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <br>
+  
+  <p>
+    <b>3</b>. <code><i>Após o treinamento</i></code> do <i>Perceptron</i>, coloque este em operação, <code><i>aplicando-o na classificação automática das amostras</i></code> de óleo da <code><i>tabela 3.3</i></code>, indicando ainda nesta tabela aqueles <code><i>resultados das saídas</i></code> (Classes) <code><i>referentes aos cinco processos de treinamento realizados</i></code> no <code><i>item 1</i></code>.
+  </p>
+  
+  <br>
 
-Utilizando o algoritmo supervisionado de `Hebb` (<i>regra de Hebb</i>) para <b>classificação de padrões</b>, e assumindo-se a taxa de aprendizagem como `0,01`, faça as seguintes atividades:
+  <div align='center'>
+    <p>
+      <i>Tabela 3.3 — Amostras de óleo para validar a rede Perceptron.</i>
+    </p>
+    <table>
+    <thead>
+      <tr>
+        <th>Amostra</th>
+        <th><code><i>x<sub>1</sub></i></code></th>
+        <th><code><i>x<sub>2</sub></i></code></th>
+        <th><code><i>x<sub>3</sub></i></code></th>
+        <th><code><i>y</i></code><br>(<code><i>T1</i></code>)</th>
+        <th><code><i>y</i></code><br>(<code><i>T2</i></code>)</th>
+        <th><code><i>y</i></code><br>(<code><i>T3</i></code>)</th>
+        <th><code><i>y</i></code><br>(<code><i>T4</i></code>)</th>
+        <th><code><i>y</i></code><br>(<code><i>T5</i></code>)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr align='center'>
+        <td>1</td>
+        <td><code><i>-0,3665</i></code></td>
+        <td><code><i>0,0620</i></code></td>
+        <td><code><i>5,9891</i></code></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr align='center'>
+        <td>2</td>
+        <td><code><i>-0,7842</i></code></td>
+        <td><code><i>1,1267</i></code></td>
+        <td><code><i>5,5912</i></code></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr align='center'>
+        <td>3</td>
+        <td><code><i>0,3012</i></code></td>
+        <td><code><i>0,5611</i></code></td>
+        <td><code><i>5,8234</i></code></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr align='center'>
+        <td>4</td>
+        <td><code><i>0,7757</i></code></td>
+        <td><code><i>1,0648</i></code></td>
+        <td><code><i>8,0677</i></code></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr align='center'>
+        <td>5</td>
+        <td><code><i>0,1570</i></code></td>
+        <td><code><i>0,8028</i></code></td>
+        <td><code><i>6,3040</i></code></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr align='center'>
+        <td>6</td>
+        <td><code><i>-0,7014</i></code></td>
+        <td><code><i>1,0316</i></code></td>
+        <td><code><i>3,6005</i></code></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr align='center'>
+        <td>7</td>
+        <td><code><i>0,3748</i></code></td>
+        <td><code><i>0,1536</i></code></td>
+        <td><code><i>6,1537</i></code></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr align='center'>
+        <td>8</td>
+        <td><code><i>-0,6920</i></code></td>
+        <td><code><i>0,9404</i></code></td>
+        <td><code><i>4,4058</i></code></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr align='center'>
+        <td>9</td>
+        <td><code><i>-1,3970</i></code></td>
+        <td><code><i>0,7141</i></code></td>
+        <td><code><i>4,9263</i></code></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr align='center'>
+        <td>10</td>
+        <td><code><i>-1,8842</i></code></td>
+        <td><code><i>-0,2805</i></code></td>
+        <td><code><i>1,2548</i></code></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
 
-1. Execute <b>cinco treinamentos</b> para a rede <i>Perceptron</i>, iniciando o vetor de pesos `{w}` em <b>cada treinamento com valores aleatórios entre zero e um</b>. Se for o caso, reinicie o gerador de números aleatórios em cada treinamento de tal forma que os elementos do vetor de pesos iniciais não sejam os mesmos. O conjunto de treinamento encontra-se em <LINK DO CONJUNTO DE TREINAMENTO>.
+  <br>
+  
+  <p>
+    <b>4</b>. Explique por que o número de épocas de treinamento, em relação a esta aplicação, varia cada vez que executamos o treinamento do <i>Perceptron</i>.
+  </p>
 
-2. Registre os resultados dos cinco treinamentos na tabela:
+  <p>
+    <b>5</b>. Para a aplicação em questão, discorra se é possível afirmar se as suas classes são linearmente separáveis.
+  </p>
+            
+  <br>
 
-Tabela 1 - Resultados dos treinamentos do Perceptron
-<table>
-  <tr>
-    <th rowspan="2">Treina<br>mento</th>  <th colspan="4">Vetor de Pesos</th>  <th colspan="4">Vetor de Pesos<br>Finais</th>  <th>Número<br>de<br>Épocas</th>
-  </tr>
-  <tr>
-    <td>w0</td> <td>w1</td> <td>w2</td> <td>w3</td> <td>w0</td> <td>w1</td> <td>w2</td> <td>w3</td> <td></td>
-  </tr>
-  <tr>
-    <td>T1</td><td>0.4016<\td><td>0.4429<\td><td>0.44<\td><td>0.0817<\td>
-               <td>1.6616<\td><td>1.4676<\td><td>2.1572<\td><td>-0.7337<\td>
-               <td>161<\td>
-  </tr>
-  <tr>
-    <td>T2</td><td>0.5278<\td><td>0.4484<\td><td>0.1016<\td><td>0.9047<\td>
-               <td>1.9078<\td><td>1.3516<\td><td>1.9892<\td><td>-0.6799<\td>
-               <td>160<\td>
-  </tr>
-  <tr>
-    <td>T3</td><td>0.7506<\td><td>0.2206<\td><td>0.0162<\td><td>0.2437<\td>
-               <td>2.0406<\td><td>1.2912<\td><td>1.9018<\td><td>-0.6501<\td>
-               <td>155<\td>
-  </tr>
-  <tr>
-    <td>T4</td><td>0.1111<\td><td>0.0192<\td><td>0.6143<\td><td>0.0954<\td>
-               <td>1.5311<\td><td>1.5286<\td><td>2.2354<\td><td>-0.7623<\td>
-               <td>158<\td>
-  </tr>
-  <tr>
-    <td>T5</td><td>0.4376<\td><td>0.0287<\td><td>0.7302<\td><td>0.8884<\td>
-               <td>1.8076<\td><td>1.3908<\td><td>2.066<\td><td>-0.7016<\td>
-               <td>142<\td>
-  </tr>
-</table>
-
-Após o treinamento do Perceptron, coloque este em operação, aplicando-o na classificação automática das amostras de óleo da tabela 1.2, indicando ainda nesta tabela aqueles resultados das saídas (Classes) referentes aos cinco processos de treinamento realizados no item 1.
-
-Tabela 1.2 — Amostras de óleo para validar a rede Perceptron
-<table>
-  <tr>
-    <th>Amostra</th><th>x1</th><th>x2</th><th>x3</th><th>Y(T1)</th><th>Y(T2)</th><th>Y(T3)</th><th>Y(T4)</th><th>Y(T5)</th> </tr>
-  <tr>
-    <td>1</td><td>-0,3665</td><td>0,0620</td><td>5,9891</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td>
-  </tr>
-  <tr>
-    <td>2</td><td>-0,7842</td><td>1,1267</td><td>5,5912</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td>
-  </tr>
-  <tr>
-    <td>3</td><td>0,3012</td><td>0,5611</td><td>5,8234</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td>
-  </tr>
-  <tr>
-    <td>4</td><td>0,7757</td><td>1,0648</td><td>8,0677</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td>
-  </tr>
-  <tr>
-    <td>5</td><td>0,1570</td><td>0,8028</td><td>6,3040</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td>
-  </tr>
-  <tr>
-    <td>6</td><td>-0,7014</td><td>1,0316</td><td>3,6005</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td>
-  </tr>
-  <tr>
-    <td>7</td><td>0,3748</td><td>0,1536</td><td>6,1537</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td>
-  </tr>
-  <tr>
-    <td>8</td><td>-0,6920</td><td>0,9404</td><td>4,4058</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td>
-  </tr>
-  <tr>
-    <td>9</td><td>-1,3970</td><td>0,7141</td><td>4,9263</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td>
-  </tr>
-  <tr>
-    <td>10</td><td>-1,8842 </td><td>0,2805</td><td>1,2548</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td>
-  </tr>
-</table>
-
-Explique por que o número de épocas de treinamento , em relação a esta aplicação, varia cada vez que executamos o treinamento do Perceptron.
-
-Para a aplicação em questão, discorra se é possível afirmar se as suas classes são linearmente separáveis.
-
-Conjunto de treinamento
-
-(Exercício do livro: Redes neurais artificiais para engenharia e ciências aplicadas pg. 70-72)
+  <div align='center'>
+    <code><i>(Fonte: SILVA, Ivan Nunes da; SPATTI, Danilo Hernane; FLAUZINO, Rogério Andrade. Redes neurais artificiais para engenharia e ciências aplicadas - curso prático. 2. ed. São Paulo: Artliber, 2016. 70-72 p.)</i></code>
+  </div>
 
 </div>
