@@ -44,7 +44,7 @@
       <i>Tabela 3.2 - Resultados dos treinamentos do Perceptron.</i>
     </p>
     <table>
-      <thead>
+    <thead>
         <tr>
           <th rowspan="2">Treinamento</th>
           <th colspan="4">Vetor de pesos iniciais</th>
@@ -63,8 +63,8 @@
           <td></td>
         </tr>
       </thead>
-      <tbody>
-        <tr align='center'>
+    <tbody>
+      <tr align='center'>
           <td>1º (T1)</td>
           <td></td>
           <td></td>
@@ -76,8 +76,8 @@
           <td></td>
           <td></td>
         </tr>
-        <tr>
-          <tr align='center'>
+      </tr>
+      <tr align='center'>
           <td>2º (T2)</td>
           <td></td>
           <td></td>
@@ -89,8 +89,7 @@
           <td></td>
           <td></td>
         </tr>
-        <tr>
-          <tr align='center'>
+      <tr align='center'>
           <td>3º (T3)</td>
           <td></td>
           <td></td>
@@ -102,8 +101,7 @@
           <td></td>
           <td></td>
         </tr>
-        <tr>
-          <tr align='center'>
+      <tr align='center'>
           <td>4º (T4)</td>
           <td></td>
           <td></td>
@@ -115,8 +113,7 @@
           <td></td>
           <td></td>
         </tr>
-        <tr>
-          <tr align='center'>
+      <tr align='center'>
           <td>5º (T5)</td>
           <td></td>
           <td></td>
@@ -128,7 +125,7 @@
           <td></td>
           <td></td>
         </tr>
-      </tbody>
+    </tbody>
     </table>
   </div>
   
