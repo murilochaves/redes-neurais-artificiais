@@ -228,7 +228,7 @@
       <tr align='center'>
         <td>7</td>
         <td>0,3748</td>
-        <td><0,1536</td>
+        <td>0,1536</td>
         <td>6,1537</td>
         <td></td>
         <td></td>
