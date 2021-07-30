@@ -1,8 +1,12 @@
-## Projeto Prático
+## 3.6 - Projeto Prático
 
-Pela análise de um processo de destilação fracionada de petróleo observou-se que determinado óleo poderia ser classificado em duas classes de pureza `{P1 e P2}` a partir da medição de três grandezas `{x1, x2 e x3}`, que representam algumas de suas propriedades físico-químicas. A equipe de engenheiros e cientistas pretende usar uma rede <i>Perceptron</i> para executar a classificação automática das duas classes.
-
-Assim, baseado nas informações coletadas do processo, formou-se o conjunto de treinamento apresentado no <LINK DO CONJUNTO DE TREINAMENTO>, tomando por convenção o valor `-1` para óleo pertencente à classe `P1` e o valor `1` para óleo pertencente à classe `P2`.
+<div align='justify'>
+  <p>
+    Pela análise de um processo de destilação fracionada de petróleo observou-se que determinado óleo poderia ser classificado em duas classes de pureza <code>{<i>P<sub>1</sub> e P<sub>2</sub></i>}</code> a partir da medição de três grandezas <code>{<i>x<sub>1</sub>, x<sub>2</sub> e x<sub>3</sub></i>}</code>, que representam algumas de suas propriedades físico-químicas. A equipe de engenheiros e cientistas pretende usar uma rede <i>Perceptron</i> para executar a classificação automática das duas classes.
+  <p>
+  
+  <p>
+    Assim, baseado nas informações coletadas do processo, formou-se o conjunto de treinamento apresentado no <LINK DO CONJUNTO DE TREINAMENTO>, tomando por convenção o valor `-1` para óleo pertencente à classe `P1` e o valor `1` para óleo pertencente à classe `P2`.
 
 Para tanto, o <b>neurônio</b> constituinte do <i>Perceptron</i> terá então <b>três entradas</b> e <b>uma saída</b> conforme ilustrado na imagem:
 
@@ -95,4 +99,6 @@ Para a aplicação em questão, discorra se é possível afirmar se as suas clas
 
 Conjunto de treinamento
 
-(Exercício do livro: Redes neurais artificiais para engenharia e ciências aplicadas )
+(Exercício do livro: Redes neurais artificiais para engenharia e ciências aplicadas pg. 70-72)
+
+</div>
