@@ -52,20 +52,20 @@
           <th>Número de épocas</th>
         </tr>
         <tr>
-          <td><code><i>w<sub>0</sub><i></code></td>
-          <td><code><i>w<sub>1</sub><i></code></td>
-          <td><code><i>w<sub>2</sub><i></code></td>
-          <td><code><i>w<sub>3</sub><i></code></td>
-          <td><code><i>w<sub>0</sub><i></code></td>
-          <td><code><i>w<sub>1</sub><i></code></td>
-          <td><code><i>w<sub>2</sub><i></code></td>
-          <td><code><i>w<sub>3</sub><i></code></td>
+          <td><b>w<sub>0</sub></b></code></td>
+          <td><b>w<sub>1</sub></b></code></td>
+          <td><b>w<sub>2</sub></b></code></td>
+          <td><b>w<sub>3</sub></b></code></td>
+          <td><b>w<sub>0</sub></b></code></td>
+          <td><b>w<sub>1</sub></b></code></td>
+          <td><b>w<sub>2</sub></b></code></td>
+          <td><b>w<sub>3</sub></b></code></td>
           <td></td>
         </tr>
       </thead>
       <tbody>
         <tr align='center'>
-          <td>1º (<code><i>T1</i></code>)</td>
+          <td>1º (T1)</td>
           <td></td>
           <td></td>
           <td></td>
@@ -78,7 +78,7 @@
         </tr>
         <tr>
           <tr align='center'>
-          <td>2º (<code><i>T2</i></code>)</td>
+          <td>2º (T2)</td>
           <td></td>
           <td></td>
           <td></td>
@@ -91,7 +91,7 @@
         </tr>
         <tr>
           <tr align='center'>
-          <td>3º (<code><i>T3</i></code>)</td>
+          <td>3º (T3)</td>
           <td></td>
           <td></td>
           <td></td>
@@ -104,7 +104,7 @@
         </tr>
         <tr>
           <tr align='center'>
-          <td>4º (<code><i>T4</i></code>)</td>
+          <td>4º (T4)</td>
           <td></td>
           <td></td>
           <td></td>
@@ -117,7 +117,7 @@
         </tr>
         <tr>
           <tr align='center'>
-          <td>5º (<code><i>T5</i></code>)</td>
+          <td>5º (T5)</td>
           <td></td>
           <td></td>
           <td></td>
@@ -148,22 +148,22 @@
     <thead>
       <tr>
         <th>Amostra</th>
-        <th><code><i>x<sub>1</sub></i></code></th>
-        <th><code><i>x<sub>2</sub></i></code></th>
-        <th><code><i>x<sub>3</sub></i></code></th>
-        <th><code><i>y</i></code><br>(<code><i>T1</i></code>)</th>
-        <th><code><i>y</i></code><br>(<code><i>T2</i></code>)</th>
-        <th><code><i>y</i></code><br>(<code><i>T3</i></code>)</th>
-        <th><code><i>y</i></code><br>(<code><i>T4</i></code>)</th>
-        <th><code><i>y</i></code><br>(<code><i>T5</i></code>)</th>
+        <th><b>x<sub>1</sub></b></th>
+        <th><b>x<sub>2</sub></b></th>
+        <th><b>x<sub>3</sub></b></th>
+        <th><b>y</b><br>(<b>T1</b>)</th>
+        <th><b>y</b><br>(<b>T2</b>)</th>
+        <th><b>y</b><br>(<b>T3</b>)</th>
+        <th><b>y</b><br>(<b>T4</b>)</th>
+        <th><b>y</b><br>(<b>T5</b>)</th>
       </tr>
     </thead>
     <tbody>
       <tr align='center'>
         <td>1</td>
-        <td><code><i>-0,3665</i></code></td>
-        <td><code><i>0,0620</i></code></td>
-        <td><code><i>5,9891</i></code></td>
+        <td>-0,3665</td>
+        <td>0,0620</td>
+        <td>5,9891</td>
         <td></td>
         <td></td>
         <td></td>
@@ -172,9 +172,9 @@
       </tr>
       <tr align='center'>
         <td>2</td>
-        <td><code><i>-0,7842</i></code></td>
-        <td><code><i>1,1267</i></code></td>
-        <td><code><i>5,5912</i></code></td>
+        <td>-0,7842</td>
+        <td>1,1267</td>
+        <td>5,5912</td>
         <td></td>
         <td></td>
         <td></td>
@@ -183,9 +183,9 @@
       </tr>
       <tr align='center'>
         <td>3</td>
-        <td><code><i>0,3012</i></code></td>
-        <td><code><i>0,5611</i></code></td>
-        <td><code><i>5,8234</i></code></td>
+        <td>0,3012</td>
+        <td>0,5611</td>
+        <td>5,8234</td>
         <td></td>
         <td></td>
         <td></td>
@@ -194,9 +194,9 @@
       </tr>
       <tr align='center'>
         <td>4</td>
-        <td><code><i>0,7757</i></code></td>
-        <td><code><i>1,0648</i></code></td>
-        <td><code><i>8,0677</i></code></td>
+        <td>0,7757</td>
+        <td>1,0648</td>
+        <td>8,0677</td>
         <td></td>
         <td></td>
         <td></td>
@@ -205,9 +205,9 @@
       </tr>
       <tr align='center'>
         <td>5</td>
-        <td><code><i>0,1570</i></code></td>
-        <td><code><i>0,8028</i></code></td>
-        <td><code><i>6,3040</i></code></td>
+        <td>0,1570</td>
+        <td>0,8028</td>
+        <td>6,3040</td>
         <td></td>
         <td></td>
         <td></td>
@@ -216,9 +216,9 @@
       </tr>
       <tr align='center'>
         <td>6</td>
-        <td><code><i>-0,7014</i></code></td>
-        <td><code><i>1,0316</i></code></td>
-        <td><code><i>3,6005</i></code></td>
+        <td>-0,7014</td>
+        <td>1,0316</td>
+        <td>3,6005</td>
         <td></td>
         <td></td>
         <td></td>
@@ -227,9 +227,9 @@
       </tr>
       <tr align='center'>
         <td>7</td>
-        <td><code><i>0,3748</i></code></td>
-        <td><code><i>0,1536</i></code></td>
-        <td><code><i>6,1537</i></code></td>
+        <td>0,3748</td>
+        <td><0,1536</td>
+        <td>6,1537</td>
         <td></td>
         <td></td>
         <td></td>
@@ -238,9 +238,9 @@
       </tr>
       <tr align='center'>
         <td>8</td>
-        <td><code><i>-0,6920</i></code></td>
-        <td><code><i>0,9404</i></code></td>
-        <td><code><i>4,4058</i></code></td>
+        <td>-0,6920</td>
+        <td>0,9404</td>
+        <td>4,4058</td>
         <td></td>
         <td></td>
         <td></td>
@@ -249,9 +249,9 @@
       </tr>
       <tr align='center'>
         <td>9</td>
-        <td><code><i>-1,3970</i></code></td>
-        <td><code><i>0,7141</i></code></td>
-        <td><code><i>4,9263</i></code></td>
+        <td>-1,3970</td>
+        <td>0,7141</td>
+        <td>4,9263</td>
         <td></td>
         <td></td>
         <td></td>
@@ -260,9 +260,9 @@
       </tr>
       <tr align='center'>
         <td>10</td>
-        <td><code><i>-1,8842</i></code></td>
-        <td><code><i>-0,2805</i></code></td>
-        <td><code><i>1,2548</i></code></td>
+        <td>-1,8842</td>
+        <td>-0,2805</td>
+        <td>1,2548</td>
         <td></td>
         <td></td>
         <td></td>
