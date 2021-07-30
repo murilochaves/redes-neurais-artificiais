@@ -1,4 +1,4 @@
-## 3.6 - Projeto Prático (Perceptron Simples)
+## 3.6 - Projeto Prático
 
 <div align='justify'>
 
