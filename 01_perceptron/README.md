@@ -7,7 +7,7 @@
   <p>
   
   <p>
-    Assim, baseado nas informações coletadas do processo, formou-se o conjunto de treinamento apresentado no <a href="https://github.com/MuriloChaves/redes-neurais-artificiais/01_perceptron/dados/Apêndice_01#Seção3.6_RNA.txt">apêndice I<a>, tomando por convenção o valor <code><i>-1</i></code> para óleo pertencente à classe <code><i>P<sub>1</sub></i></code> e o valor <code><i>1</i></code> para óleo pertencente à classe <code><i>P<sub>2</sub></i></code>.
+    Assim, baseado nas informações coletadas do processo, formou-se o conjunto de treinamento apresentado no <a href="https://github.com/MuriloChaves/redes-neurais-artificiais/blob/master/01_perceptron/dados/Apêndice_01%23Seção3.6_RNA.txt">apêndice I<a>, tomando por convenção o valor <code><i>-1</i></code> para óleo pertencente à classe <code><i>P<sub>1</sub></i></code> e o valor <code><i>1</i></code> para óleo pertencente à classe <code><i>P<sub>2</sub></i></code>.
   <p>
 
   <p>
@@ -30,7 +30,7 @@
   </p>
 
   <p>
-    <b>1</b>. <code><i>Execute cinco treinamentos</i></code> para a rede <i>Perceptron</i>, <code><i>iniciando o vetor de pesos {<b>w</b>} em cada treinamento com valores aleatórios entre zero e um</i></code>. Se for o caso, reinicie o gerador de números aleatórios em cada treinamento de tal forma que os elementos do vetor de pesos iniciais não sejam os mesmos. O conjunto de treinamento encontra-se no <a href="https://github.com/MuriloChaves/redes-neurais-artificiais/01_perceptron/dados/Apêndice_01#Seção3.6_RNA.txt">apêndice I<a>.
+    <b>1</b>. <code><i>Execute cinco treinamentos</i></code> para a rede <i>Perceptron</i>, <code><i>iniciando o vetor de pesos {<b>w</b>} em cada treinamento com valores aleatórios entre zero e um</i></code>. Se for o caso, reinicie o gerador de números aleatórios em cada treinamento de tal forma que os elementos do vetor de pesos iniciais não sejam os mesmos. O conjunto de treinamento encontra-se no <a href="https://github.com/MuriloChaves/redes-neurais-artificiais/blob/master/01_perceptron/dados/Apêndice_01%23Seção3.6_RNA.txt">apêndice I<a>.
   </p>
   
   <p>
